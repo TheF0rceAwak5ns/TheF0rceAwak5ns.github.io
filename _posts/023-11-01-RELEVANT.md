@@ -1,5 +1,5 @@
 ---
-title: Relevant - Easy THM
+title: Relevant - Medium THM
 date: 2023-11-01 12:01:23 +/-0800
 categories: [writeup, tryhackme]
 writeup: :title
