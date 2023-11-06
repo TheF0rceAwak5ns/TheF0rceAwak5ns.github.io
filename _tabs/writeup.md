@@ -5,5 +5,3 @@ order: 1
 permalink: /writeup/
 layout: category
 ---
-
-{% categories %}
