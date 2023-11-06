@@ -2,8 +2,8 @@
 title: Relevant - Easy THM
 date: 2023-11-01 12:01:23 +/-0800
 categories: [writeup, tryhackme]
-writeup: [:title]
-permalink: /relevant
+writeup: :title
+permalink: /writeup/relevant
 tags: [thm, medium, writeup, windows, command injection, privilege abuse]     # TAG names should always be lowercase
 ---
 
