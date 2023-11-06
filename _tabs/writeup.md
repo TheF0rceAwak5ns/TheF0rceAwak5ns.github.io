@@ -6,4 +6,4 @@ permalink: /writeup/
 layout: category
 ---
 
-{% site.categories %}
+{% categories %}
