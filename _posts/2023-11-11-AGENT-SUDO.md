@@ -45,7 +45,7 @@ We spawn on a website, with a message talking about **USER-AGENT**
 
 Try changing the USER-AGENT
 
-![USER-AGENT](/assets/agentSudo/userAgent.png)
+![USER-AGENT](/assets/agentSudo/userAgent.png){.left}
 
 I got this new message
 
@@ -72,7 +72,7 @@ Retrieve all files and folder:
 
 `wget -m --no-passive ftp://chris:pass@<target>`
 
-Get this files
+Get these files
 
 ![zip](/assets/agentSudo/zip.png)
 
