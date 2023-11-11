@@ -7,9 +7,9 @@ permalink: /agentsudo
 tags: [thm, writeup, easy, linux, steganographie, web, CVE-2019-14287]     # TAG names should always be lowercase
 ---
 
-- OS: Windows
-- Difficulty: Medium
-- Author: 4nh4ck1ne
+- OS: Linux
+- Difficulty: Easy
+- Author: Talace
 
 # **SCANNING**
 
