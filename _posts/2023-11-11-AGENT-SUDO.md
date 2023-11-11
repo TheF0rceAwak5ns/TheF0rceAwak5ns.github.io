@@ -40,25 +40,25 @@ We go on the webserver
 
 We spawn on a website, with a message talking about **USER-AGENT**
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![website](/assets/agentSudo/website.png)
 
 
 Try changing the USER-AGENT
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![USER-AGENT](/assets/agentSudo/userAgent.png)
 
 I got this new message
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![AgentR](/assets/agentSudo/agentR.png)
 
 
 It work, let's use the burp intruder to brute force all pages
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![intruder](/assets/agentSudo/bruteForceUserAgent.png)
 
 Found the path /C
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![AgentC](/assets/agentSudo/agentC.png)
 
 User chris ? Let's try to brute force is FTP creds
 
@@ -73,17 +73,14 @@ Retrieve all files and folder:
 `wget -m --no-passive ftp://chris:pass@<target>`
 
 Get this files
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+![zip](/assets/agentSudo/zip.png)
 
 Extract the zip
 
 `binwalk -e cutie.png`
 
-Get a hash possibly
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-Look like base64
+Get a hash possibly, look like base64
 
 `echo 'QXJlYTUx' | base64 -d`
 
@@ -109,7 +106,7 @@ check sudo rights
 
 `sudo -l`
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![privesc](/assets/agentSudo/privesc.png)
 
 Found a CVE on sudo version 1.8.27
 
