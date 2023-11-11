@@ -158,11 +158,11 @@ Decryption successful
 So we now that we have a user and password, let's continue our enumeration to the website on port 8443: 
 
 
-![Apploin](https://github.com/TheF0rceAwak5ns/TheF0rceAwak5ns.github.io/blob/main/assets/Authority%20Htb/Websitelogin.png)
+![Apploin](https://github.com/TheF0rceAwak5ns/TheF0rceAwak5ns.github.io/blob/main/assets/AuthorityHtb/Websitelogin.png)
 
 Now we have a username and password we can try to connect to this app. 
 
-![Firstconnection](/assets/authorityHtb/Firstconnection.png)
+![Firstconnection](https://github.com/TheF0rceAwak5ns/TheF0rceAwak5ns.github.io/blob/main/assets/Authority%20Htb/Firstconnection.png)
 
 it does not seem to work... after some try, i understand that it is necessary to connect with the button "configuration manager"
 
