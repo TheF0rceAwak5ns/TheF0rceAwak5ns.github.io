@@ -3,9 +3,13 @@ title: Authority - Medium HTB
 date: 2023-11-11 10:11:53 +/-0800
 categories: [writeup, hackthebox]
 writeup: :title
-permalink: /Authority
-tags: [htb, writeup, medium, Active Directory, Ansible ,Ldap, Certificate]     # TAG names should always be lowercase
+permalink: /authority
+tags: [htb, writeup, medium, active directory, ansible ,ldap, certificate]     # TAG names should always be lowercase
 ---
+
+- OS: Windows
+- Difficulty: Medium
+- Author: 4nh4ck1ne
 
 
 # Authority
@@ -154,22 +158,15 @@ Decryption successful
 So we now that we have a user and password, let's continue our enumeration to the website on port 8443: 
 
 
-
-
-
-
-
-
-
 ![Apploin](https://github.com/TheF0rceAwak5ns/TheF0rceAwak5ns.github.io/blob/main/assets/Authority%20Htb/Websitelogin.png)
 
 Now we have a username and password we can try to connect to this app. 
 
-![Firstconnection](https://github.com/TheF0rceAwak5ns/TheF0rceAwak5ns.github.io/blob/main/assets/Authority%20Htb/Firstconnection.png)
+![Firstconnection](/assets/authorityHtb/Firstconnection.png)
 
 it does not seem to work... after some try, i understand that it is necessary to connect with the button "configuration manager"
 
-![Firstacces](https://github.com/TheF0rceAwak5ns/TheF0rceAwak5ns.github.io/blob/main/assets/AuthorityHtb/Firstacces.png)
+![Firstacces](/assets/authorityHtb/Firstacces.png)
 
 Ok, we are in the application trying to see what we can do, Knowing that this application has a relationship with the LDAP protocol. In the configuration editor menu, we can see that we have a pretty cool handle on the LDAPs server address.
 Directly I think of an attack of type LDAP passback attacks, for that we must mount an LDAP server on our attacking machine: 
@@ -195,7 +192,7 @@ listening on tun0, link-type RAW (Raw IP), snapshot length 262144 bytes
 
 We can now modify the ldap server of the application by putting our ldap server and see what happens, CAUTION!: put in ldap and not ldap(s), yes I literally get blocked on it for an evening because of this...
 
-![UpdateLdap](https://github.com/TheF0rceAwak5ns/TheF0rceAwak5ns.github.io/blob/main/assets/AuthorityHtb/UpdateLdap.png)
+![UpdateLdap](/assets/authorityHtb/UpdateLdap.png)
 
 You can click on the "test LDAP profile" button to receive your LDAP connection: 
 ```
