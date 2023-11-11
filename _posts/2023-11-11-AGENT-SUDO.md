@@ -7,7 +7,7 @@ permalink: /agentsudo
 tags: [thm, writeup, easy, linux, steganographie, web, CVE-2019-14287]     # TAG names should always be lowercase
 ---
 
-## **`SCANNING`**
+## **SCANNING**
 
 **Threader3000 scan:**
 
@@ -32,7 +32,7 @@ PORT   STATE SERVICE VERSION
 |_http-server-header: Apache/2.4.29 (Ubuntu)
 ```
 
-## `ENUMERATION`
+## **ENUMERATION**
 
 We go on the webserver
 
@@ -45,7 +45,7 @@ We spawn on a website, with a message talking about **USER-AGENT**
 
 Try changing the USER-AGENT
 
-![USER-AGENT](/assets/agentSudo/userAgent.png){.left}
+![USER-AGENT](/assets/agentSudo/userAgent.png)
 
 I got this new message
 
@@ -98,7 +98,7 @@ Next extract the jpg with the pass
 
 Found a user and a pass, try to connect via ssh, it work !
 
-## `PRIVESC`
+## **PRIVESC**
 
 We have the user.txt, let's search for the root
 
