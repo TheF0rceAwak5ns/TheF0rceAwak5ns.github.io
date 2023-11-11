@@ -158,15 +158,15 @@ Decryption successful
 So we now that we have a user and password, let's continue our enumeration to the website on port 8443: 
 
 
-![Apploin](/assets/authorityHtb/websitelogin.png)
+![website](/assets/authorityHtb/websitelogin.png)
 
 Now we have a username and password we can try to connect to this app. 
 
-![Firstconnection](/assets/authorityHtb/firstconnection.png)
+![FirstConnection](/assets/authorityHtb/firstconnection.png)
 
 it does not seem to work... after some try, i understand that it is necessary to connect with the button "configuration manager"
 
-![Firstacces](/assets/authorityHtb/firstacces.png)
+![FirstAccess](/assets/authorityHtb/firstacces.png)
 
 Ok, we are in the application trying to see what we can do, Knowing that this application has a relationship with the LDAP protocol. In the configuration editor menu, we can see that we have a pretty cool handle on the LDAPs server address.
 Directly I think of an attack of type LDAP passback attacks, for that we must mount an LDAP server on our attacking machine: 
