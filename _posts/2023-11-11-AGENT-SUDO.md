@@ -1,7 +1,7 @@
 ---
 title: Agent Sudo - Easy THM
 date: 2023-11-11 10:20:51 +/-0800
-categories: [writeup, tryhackme]
+categories: [writeup, Talace]
 writeup: :title
 permalink: /agentsudo
 tags: [thm, writeup, easy, linux, steganographie, web, CVE-2019-14287]     # TAG names should always be lowercase
