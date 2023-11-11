@@ -7,7 +7,11 @@ permalink: /agentsudo
 tags: [thm, writeup, easy, linux, steganographie, web, CVE-2019-14287]     # TAG names should always be lowercase
 ---
 
-## **SCANNING**
+- OS: Windows
+- Difficulty: Medium
+- Author: 4nh4ck1ne
+
+# **SCANNING**
 
 **Threader3000 scan:**
 
@@ -32,7 +36,7 @@ PORT   STATE SERVICE VERSION
 |_http-server-header: Apache/2.4.29 (Ubuntu)
 ```
 
-## **ENUMERATION**
+# **ENUMERATION**
 
 We go on the webserver
 
@@ -66,7 +70,7 @@ User chris ? Let's try to brute force is FTP creds
 
 Get the FTP credentials
 
-### FTP ENUMERATION
+## FTP ENUMERATION
 
 Retrieve all files and folder:
 
@@ -98,7 +102,7 @@ Next extract the jpg with the pass
 
 Found a user and a pass, try to connect via ssh, it work !
 
-## **PRIVESC**
+# **PRIVESC**
 
 We have the user.txt, let's search for the root
 
@@ -112,7 +116,7 @@ Found a CVE on sudo version 1.8.27
 
 https://www.exploit-db.com/exploits/47502
 
-**The exploit:**
+## **The exploit:**
 
 sudo -u#-1 /bin/bash
 
