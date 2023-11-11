@@ -26,7 +26,8 @@ description: >- # used by seo meta and the atom feed
 url: "https://TheF0rceAwak5ns.github.io"
 
 github:
-  username: github_username # change to your github username
+  username_talace: StopThatTalace
+  username_leandreonizuka: leandreonizuka
 
 twitter:
   username: twitter_username # change to your twitter username
@@ -70,10 +71,10 @@ theme_mode: # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn:
+img_cdn: /assets/LOGOTFA.png
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /assets/ppStar.jpg
+avatar: /assets/LOGOTFA.png
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -154,7 +155,7 @@ defaults:
       layout: page
       permalink: /:title/
   - scope:
-      path: /assets/ppStar.jpg
+      path: /assets/LOGOTFA.png
     values:
       swcache: true
   - scope:
