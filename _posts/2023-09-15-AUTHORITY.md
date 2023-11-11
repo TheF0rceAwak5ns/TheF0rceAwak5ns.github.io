@@ -2,6 +2,7 @@
 title: Authority - Medium HTB
 date: 2023-11-11 10:11:53 +/-0800
 categories: [writeup, hackthebox]
+categories: [4nh4ck1ne, writeup]
 writeup: :title
 permalink: /authority
 tags: [htb, writeup, medium, active directory, ansible ,ldap, certificate]     # TAG names should always be lowercase
