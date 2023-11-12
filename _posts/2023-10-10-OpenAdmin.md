@@ -198,4 +198,4 @@ reset; sh 1>&0 2>&0
 
 you Get the root Great job !! 
 
-![root](https://github.com/TheF0rceAwak5ns/TheF0rceAwak5ns.github.io/blob/main/assets/OpenAdmin/root.png)
+![root](/assets/OpenAdmin/root.png)
