@@ -1,7 +1,6 @@
-
 ---
-title: Authority - Medium HTB
-date: 2023-09-15 10:11:53 +/-0800
+title: OpenAdmin - easy HTB
+date: 2023-10-10 10:11:53 +/-0800
 categories: [writeup, hackthebox]
 writeup: :title
 permalink: /openadmin
