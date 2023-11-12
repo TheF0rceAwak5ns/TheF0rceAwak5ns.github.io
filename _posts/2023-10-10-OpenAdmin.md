@@ -42,11 +42,11 @@ before walk on the app you can lauch a gobuster brute force scan: `gobuster dir 
 
 If you go on `/music` you can see an bouton name login. 
 
-![/music](https://github.com/TheF0rceAwak5ns/TheF0rceAwak5ns.github.io/blob/main/assets/OpenAdmin/music.png)
+![/music](/assets/OpenAdmin/music.png)
 
 Yon are redirect to an web page `/ona`, it is an app named OpenNetAdmin lets if an exploit existe on this current version (v18.1.1).
 
-![ona](https://github.com/TheF0rceAwak5ns/TheF0rceAwak5ns.github.io/blob/main/assets/OpenAdmin/Ona.png)
+![ona](/assets/OpenAdmin/Ona.png)
 
 Seems that yes because on exploitdb can find a code to exploit the vulnerability more it is an rce, this vulnerability will give us directly access to the server. If we look for a POC in python that works well. [POC](https://github.com/amriunix/ona-rce/tree/master)
 
@@ -181,7 +181,7 @@ User joanna may run the following commands on openadmin:
 
 So the user joanna can therefore launch the command/bin/nano/opt/priv without password with must root, well let’s look at [GTfobins](https://gtfobins.github.io/#+sudo)  if there is a way to abuse nano.
 
-![gtfobins](https://github.com/TheF0rceAwak5ns/TheF0rceAwak5ns.github.io/blob/main/assets/OpenAdmin/Gtfobins.png)
+![gtfobins](/assets/OpenAdmin/Gtfobins.png)
 
 the abuse of nano binary is done as follows:
 
