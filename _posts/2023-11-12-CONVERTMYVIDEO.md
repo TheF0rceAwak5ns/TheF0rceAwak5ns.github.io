@@ -1,10 +1,10 @@
 ---
 title: ConvertMyVideo - Medium THM
 date: 2023-11-12 08:11:31 +/-0800
-categories: [writeup, talace]
+categories: [writeup, tryhackme]
 writeup: :title
-permalink: /convertmyvideo
-tags: [thm, writeup, medium, linux, command injection, web]     # TAG names should always be lowercase
+permalink: /convert
+tags: [thm, writeup, medium, linux, command injection, web, talace]     # TAG names should always be lowercase
 ---
 
 - OS: **Linux**
