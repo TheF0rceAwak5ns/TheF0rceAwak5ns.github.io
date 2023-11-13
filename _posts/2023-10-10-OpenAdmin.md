@@ -4,7 +4,7 @@ date: 2023-10-10 10:11:53 +/-0800
 categories: [writeup, hackthebox]
 writeup: :title
 permalink: /openadmin
-tags: [htb, writeup, easy, Linux, CVE, Privileges Escalation, 4nh4ck1n3]     # TAG names should always be lowercase
+tags: [htb, writeup, easy, Linux, CVE, Privileges Escalation, 4nh4ck1ne]     # TAG names should always be lowercase
 ---
 
 - OS: **Linux**
