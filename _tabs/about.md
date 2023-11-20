@@ -26,4 +26,14 @@ CTF Platformes :
 - [Tryhackme](https://tryhackme.com/p/leandreonizuka84)
 - [Hackthebox](https://app.hackthebox.com/users/1328334)
 
+### Talace 🌌
 
+Student in web development, in the south of France.
+
+Jump in the world of cyber since few month ago. Start by learning with THM then RootMe and finally with HTB.
+
+Currently preparing for eJPT certification. 
+
+Hard work, grind, obsession that's what only count for me.
+
+CTF & Others: [RootMe 💀](www.root-me.org%2FTalace%3Flang%3Dfr), [HackTheBox 🟩](https://app.hackthebox.com/users/1551559), [Tryhackme 😶‍🌫️](https://tryhackme.com/p/0x.88ta.ko), [GitHub 😼](https://github.com/StopThatTalace) 

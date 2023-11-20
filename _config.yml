@@ -30,7 +30,7 @@ github:
   username_leandreonizuka: leandreonizuka
 
 twitter:
-  username: twitter_username # change to your twitter username
+  username_talace: Talace_ # change to your twitter username
 
 social:
   # Change to your full name.
@@ -39,8 +39,10 @@ social:
   email: example@domain.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
-    - https://github.com/username # change to your github homepage
+    - https://twitter.com/talace_
+    - https://twitter.com/leandreonizuka  # change to your twitter homepage
+    - https://github.com/StopThatTalace
+    - https://github.com/leandreonizuka # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username

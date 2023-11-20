@@ -1,18 +1,14 @@
 #  The contact options.
 
+Title: Talace
 - type: github
-  icon: "fab fa-github"
+  icon: "T"
+  url: 'https://github.com/StopThatTalace'
 
 - type: twitter
   icon: "fa-brands fa-x-twitter"
+  url: 'https://twitter.com/talace_'
 
-- type: email
-  icon: "fas fa-envelope"
-  noblank: true # open link in current tab
-
-- type: rss
-  icon: "fas fa-rss"
-  noblank: true
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
