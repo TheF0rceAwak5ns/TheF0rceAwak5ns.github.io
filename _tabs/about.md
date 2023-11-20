@@ -36,4 +36,4 @@ Currently preparing for eJPT certification.
 
 Hard work, grind, obsession that's what only count for me.
 
-CTF & Others: [RootMe 💀](www.root-me.org/Talace/lang/fr), [HackTheBox 🟩](https://app.hackthebox.com/users/1551559), [Tryhackme 😶‍🌫️](https://tryhackme.com/p/0x.88ta.ko), [GitHub 😼](https://github.com/StopThatTalace) 
+CTF & Others: [RootMe 💀](https://www.root-me.org/Talace), [HackTheBox 🟩](https://app.hackthebox.com/users/1551559), [Tryhackme 😶‍🌫️](https://tryhackme.com/p/0x.88ta.ko), [GitHub 😼](https://github.com/StopThatTalace) 
