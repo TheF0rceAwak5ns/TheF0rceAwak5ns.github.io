@@ -1,6 +1,6 @@
 #  The contact options.
 - type: github
-  icon: "T"
+  icon: "fab fa-github"
   url: 'https://github.com/StopThatTalace'
 
 - type: twitter
