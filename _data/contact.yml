@@ -5,7 +5,11 @@
 
 - type: twitter
   icon: "fa-brands fa-x-twitter"
-  url: 'https://twitter.com/talace_'
+  url: 'https://twitter.com/username_talace'
+
+- type: twitter
+  icon: "fa-brands fa-x-twitter"
+  url: 'https://twitter.com/username_talace'
 
 # Uncomment and complete the url below to enable more contact options
 #
