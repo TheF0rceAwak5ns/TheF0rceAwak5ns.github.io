@@ -1,15 +1,11 @@
 #  The contact options.
 - type: github
   icon: "fab fa-github"
-  url: 'StopThatTalace'
+  url: 'https://github.com/TheF0rceAwak5ns'
 
 - type: twitter
   icon: "fa-brands fa-x-twitter"
-  url: 'talace'
-
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
-  url: 'talace'
+  url: 'https://twitter.com/TheF0rceAwak5ns'
 
 # Uncomment and complete the url below to enable more contact options
 #
