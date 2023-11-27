@@ -22,9 +22,9 @@ J'adore tout ce qui est active directory & Web mais je dois encore progresser. L
 En terme de certifications j'ai passé l'[EJPT](https://security.ine.com/certifications/ejpt-certification/) et je viens de finir le pro labs [Dante](https://app.hackthebox.com/prolabs/overview/dante) de hackthebox. Je vise la [CRTP](https://www.alteredsecurity.com/post/certified-red-team-professional-crtp) pour mars ou avril avant les épreuves de BTS. Parcontre si je gagne au loto ce sera l'OSCP 👨🏻‍💻.
 
 CTF Platformes : 
-- [Rootme](https://www.root-me.org/4nh4ck1n3)
-- [Tryhackme](https://tryhackme.com/p/leandreonizuka84)
-- [Hackthebox](https://app.hackthebox.com/users/1328334)
+- 💀 [Rootme](https://www.root-me.org/4nh4ck1n3)
+- ☁️ [Tryhackme](https://tryhackme.com/p/leandreonizuka84)
+- 🟩[Hackthebox](https://app.hackthebox.com/users/1328334)
 
 ### Talace 🌌
 
