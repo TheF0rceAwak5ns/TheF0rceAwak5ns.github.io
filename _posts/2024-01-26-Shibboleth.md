@@ -1,4 +1,3 @@
-
 ---
 title: Shibboleth - Medium HTB
 date: 202-01-27 10:11:53 +/-0800
