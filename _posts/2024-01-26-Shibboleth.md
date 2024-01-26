@@ -1,6 +1,6 @@
 ---
 title: Shibboleth - Medium HTB
-date: 202-01-27 10:11:53 +/-0800
+date: 2024-01-27 10:11:53 +/-0800
 categories: [writeup, hackthebox]
 writeup: :title
 permalink: /shibboleth
