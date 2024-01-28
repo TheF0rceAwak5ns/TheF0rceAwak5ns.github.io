@@ -42,7 +42,7 @@ use whatweb to see the technologie used by the web site :
 http://shibboleth.htb [200 OK] Apache[2.4.41], Bootstrap, Country[RESERVED][ZZ], Email[contact@example.com,info@example.com], HTML5, HTTPServer[Ubuntu Linux][Apache/2.4.41 (Ubuntu)], IP[10.10.11.124], Lightbox, PoweredBy[enterprise], Script, Title[FlexStart Bootstrap Template - Index]
 ```
 
-Lets lauche a gobuster bf to enumerate the web page :
+Lets lauch a gobuster bf to enumerate the web page :
 
 ```bash
 > gobuster dir -u http://shibboleth.htb/ -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt -t50
@@ -71,13 +71,13 @@ Enumerate the vhost with fuff :
     * FUZZ: zabbix
 ```
 
-all vhosts redirect to the same page ducoup you can add just one of the 3 to your/etc/hosts, and ducoup one comes across a login page of the zabbix software which is a monitoring software for computer park: 
+all vhosts redirect to the same page so you can add just one of the 3 to your/etc/hosts, and one comes across a login page of the zabbix software which is a monitoring software for computer park: 
 
 ![Untitled](assets/Shibboleth/login.png)
 
 ## **Enumerate and exploit zabbix :**
 
-first I want to find the version of zabbix ducoup I find on github repo with tools:
+first I want to find the version of zabbix, I find on github repo with tools:
 
 [GitHub - freeworkaz/zabbix_test: this is some scripts for pentesting zabbix server](https://github.com/freeworkaz/zabbix_test)
 
@@ -181,7 +181,7 @@ https://www.exploit-db.com/exploits/50816
 
 Downlaod it with searchsploit : `searchsploit -m 50816.py`
 
-Run ti and gain your reverse shell : 
+Run it and gain your reverse shell : 
 
 ```python
 #run listener : 
@@ -200,7 +200,7 @@ Run ti and gain your reverse shell :
 Nice !
 ```
 
-You can can move lateraly on the user ipmi-svc, for that reuse the password of the administrator hash. 
+You can can move lateraly on the user ipmi-svc, for that re use the password of the administrator hash. 
 
 ## **Privileges Escalation Exploit mysql CVE:**
 
