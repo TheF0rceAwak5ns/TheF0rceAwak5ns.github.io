@@ -10,6 +10,7 @@ tags: [web, reverse, forensics]     # TAG names should always be lowercase
 ## Summary
 <ul>
     <li><a href="#forensics">Forensic</a></li>
+    <li><a href="#crypto">Crypto</a></li>
     <li><a href="#web">Web</a></li>
     <li><a href="#reverse">Reverse</a></li>
 </ul>
