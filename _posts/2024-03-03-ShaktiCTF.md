@@ -8,8 +8,8 @@ permalink: /shaktictf
 tags: [htb, writeup, gccctf,web ,talace, 4nh4ck1ne, reverse, web, forensics, crypto]     # TAG names should always be lowercase
 ---
 
-# Forensics 
-## Aqua Gaze
+## Forensics 
+### Aqua Gaze
 Flag by : **Anakin** & **F4doli**
 
 To start the chanlleges we have a pictures Directly I make a binwalk to extract potential file and hidden directory. 
@@ -58,8 +58,8 @@ I found a tool which extracts from the hidden data in JPEG files what we have be
 
 It seems we have a large output text file try to analyze it. It seems we have a large output text file try to analyze it. by looking well we can directly fall on a chain of carateres encoded in base64, decode it and gain the flag !! 🤗
 
-# Crypto
-## Flag Expedition
+## Crypto
+### Flag Expedition
 Flag by : **Anakin**
 
 The chall begin with this image : 
@@ -86,8 +86,8 @@ I think we can easily guess the flag 😼
 
 Final flag : `shaktictf{was_it_too_easy_to_find}`
 
-# Web 
-## Delicious 
+## Web 
+### Delicious 
 Flag by : **Anakin**
 
 The chall begin on a big cookie screen. 
@@ -110,7 +110,7 @@ I can juste change the value to 1 and send the request.
 
 GG we get the Flag ! =) 
 
-## Ultimate Spiderman Fan
+### Ultimate Spiderman Fan
 
 Flag by : **Anakin** & **Talace**
 
