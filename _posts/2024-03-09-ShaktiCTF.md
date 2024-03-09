@@ -1,5 +1,5 @@
 ---
-title: ShaktiCTF 2024 - Writeup
+title: ShaktiCTF 2024
 date: 2024-03-09 12:30:00 +/-0800
 categories: [writeup, CTF]
 writeup: :title
