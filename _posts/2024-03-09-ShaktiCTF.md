@@ -7,6 +7,12 @@ permalink: /shaktictf
 tags: [web, reverse, forensics]     # TAG names should always be lowercase
 ---
 
+## Summary
+
+<a href="#forensics">Forensic</a>
+<a href="#web">Web</a>
+<a href="#reverse">Reverse</a>
+
 ![result](assets/ShaktiCTF/result.png)
 
 ## Forensics 
