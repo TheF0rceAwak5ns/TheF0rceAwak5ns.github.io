@@ -19,7 +19,7 @@ Actuellement étudiant en BTS SIO SISR (Vaucluse) , je suis passionné de CTF, d
 
 J'adore tout ce qui est active directory & Web mais je dois encore progresser. L'année prochaine j'espère pouvoir intégrer l'ESNA de Bretagne🤞. 
 
-En terme de certifications j'ai passé l'[EJPT](https://security.ine.com/certifications/ejpt-certification/) et je viens de finir le pro labs [Dante](https://app.hackthebox.com/prolabs/overview/dante) de hackthebox. Je vise la [CRTP](https://www.alteredsecurity.com/post/certified-red-team-professional-crtp) pour mars ou avril avant les épreuves de BTS. Parcontre si je gagne au loto ce sera l'OSCP 👨🏻‍💻.
+Je me prépare actuellement pour passer l'OSCP en septembre.
 
 CTF Platformes : 
 - 💀 [Rootme](https://www.root-me.org/4nh4ck1n3)
