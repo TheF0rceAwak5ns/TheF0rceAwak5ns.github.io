@@ -1,4 +1,3 @@
-
 ---
 title: ShaktiCTF 2024- Writeup
 date: 2024-03-09 10:11:53 +/-0800
@@ -7,6 +6,7 @@ writeup: :title
 permalink: /shaktictf
 tags: [htb, writeup, gccctf,web ,talace, 4nh4ck1ne, reverse, web, forensics, crypto]     # TAG names should always be lowercase
 ---
+
 ![result](assets/ShaktiCTF/result.png)
 
 ## Forensics 
