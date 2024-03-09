@@ -7,6 +7,7 @@ writeup: :title
 permalink: /shaktictf
 tags: [htb, writeup, gccctf,web ,talace, 4nh4ck1ne, reverse, web, forensics, crypto]     # TAG names should always be lowercase
 ---
+![result](assets/ShaktiCTF/result.png)
 
 ## Forensics 
 ### Aqua Gaze
