@@ -4,7 +4,7 @@ date: 2023-12-27 10:11:53 +/-0800
 categories: [writeup, hackthebox]
 writeup: :title
 permalink: /monteverde
-tags: [htb, writeup, medium, active directory, Azure, Azure connect, 4nh4ck1ne]     # TAG names should always be lowercase
+tags: [AD, Azure]     # TAG names should always be lowercase
 ---
 
 ![PP](assets/Monteverde/PP.png)

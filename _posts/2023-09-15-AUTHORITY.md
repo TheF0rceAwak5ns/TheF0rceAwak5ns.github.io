@@ -4,7 +4,7 @@ date: 2023-09-15 10:11:53 +/-0800
 categories: [writeup, hackthebox]
 writeup: :title
 permalink: /authority
-tags: [htb, writeup, medium, active directory, ansible, ldap, certificate, 4nh4ck1ne]     # TAG names should always be lowercase
+tags: [AD, Common services]     # TAG names should always be lowercase
 ---
 
 - OS: **Windows**

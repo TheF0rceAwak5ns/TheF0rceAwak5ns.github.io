@@ -4,7 +4,7 @@ date: 2023-11-11 10:20:51 +/-0800
 categories: [writeup, tryhackme]
 writeup: :title
 permalink: /agentsudo
-tags: [thm, writeup, easy, linux, steganographie, web, CVE-2019-14287, talace]     # TAG names should always be lowercase
+tags: [Web, CVE-2019-14287, Common services]     # TAG names should always be lowercase
 ---
 
 - OS: Linux

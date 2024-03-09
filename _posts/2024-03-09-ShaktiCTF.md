@@ -1,10 +1,10 @@
 ---
 title: ShaktiCTF 2024 - Writeup
-date: 2024-03-09 10:11:53 +/-0800
+date: 2024-03-09 12:30:00 +/-0800
 categories: [writeup, CTF]
 writeup: :title
 permalink: /shaktictf
-tags: [web, reverse, forensics]     # TAG names should always be lowercase
+tags: [Web, Reverse, Forensics, Crypto]
 ---
 
 ## Summary
@@ -177,6 +177,9 @@ Now send the request always in `/checkout` and get the flag 😁
 
 ### Find the flag - Command injection
 
+Flag by : **Talace**
+
+
 ![2024-03-09_12h57_20.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8ca96a8e-055d-447d-8a2a-068c2ed20c09/01c2d6a7-cd67-4878-b136-e16a53685925/2024-03-09_12h57_20.png)
 
 We got a website and his source code, pretty nice!
@@ -196,6 +199,8 @@ We try to make two request in one with `;` and it work, got the flag!
 `https://10.10.10.10/?test=;cat flag.txt`
 
 ### Filters - Php eval with filters
+
+Flag by : **Talace** & **Anackin**
 
 ![2024-03-09_13h01_17.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8ca96a8e-055d-447d-8a2a-068c2ed20c09/b19b5c4e-5b48-42fe-85ab-f616042b1736/2024-03-09_13h01_17.png)
 
@@ -243,6 +248,8 @@ GG ! Let's retrieve our flag !!
 
 ## Reverse
 ### Warmup
+
+Flag by : **Talace**
 
 ![2024-03-09_13h20_09.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8ca96a8e-055d-447d-8a2a-068c2ed20c09/d00602f1-69ca-415c-8ada-a8d0332be0e1/2024-03-09_13h20_09.png)
 

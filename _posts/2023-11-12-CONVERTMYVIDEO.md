@@ -4,7 +4,7 @@ date: 2023-11-12 08:11:31 +/-0800
 categories: [writeup, tryhackme]
 writeup: :title
 permalink: /convert
-tags: [thm, writeup, medium, linux, command injection, web, talace]     # TAG names should always be lowercase
+tags: [Command injection, Web]     # TAG names should always be lowercase
 ---
 
 - OS: **Linux**

@@ -4,7 +4,7 @@ date: 2024-01-26 10:11:53 +/-0800
 categories: [writeup, hackthebox]
 writeup: :title
 permalink: /shibboleth
-tags: [htb, writeup, medium, Zabbix, CVE, MYSQL, 4nh4ck1ne]     # TAG names should always be lowercase
+tags: [Zabbix, CVE, MYSQL]     # TAG names should always be lowercase
 ---
 
 # Shibboleth
