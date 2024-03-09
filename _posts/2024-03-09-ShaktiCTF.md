@@ -255,7 +255,8 @@ Final flag : `shaktictf{was_it_too_easy_to_find}`
 
 Flag by : **Talace**
 
-![2024-03-09_13h20_09.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8ca96a8e-055d-447d-8a2a-068c2ed20c09/d00602f1-69ca-415c-8ada-a8d0332be0e1/2024-03-09_13h20_09.png)
+![intro](assets/ShaktiCTF/reverse/warmup/intro.png)
+
 
 We have a binary, in ELF format. First i open it in GDB (with peda lib). Put a break point at main function and debug instructions by instructions.
 
@@ -263,7 +264,8 @@ We have a binary, in ELF format. First i open it in GDB (with peda lib). Put a b
 
 I can see we have a `strcmp` (string comparaison) with `ltrace`
 
-![2024-03-09_13h17_26.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8ca96a8e-055d-447d-8a2a-068c2ed20c09/ff42964f-926d-4daf-8978-750daf6a5be4/2024-03-09_13h17_26.png)
+![ltrace](assets/ShaktiCTF/reverse/warmup/ltrace.png)
+
 
 Back in gdb, I was able to retrieve some parts of the string that are being compared to our input. Finally, I got this string:
 
@@ -275,6 +277,6 @@ When I put it under `ltrace`, I can observe that my string is being inverted bef
 
 So now, we can understand that the main function compares two strings with each other but inverts the string it receives from input.
 
-![2024-03-09_13h18_30.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8ca96a8e-055d-447d-8a2a-068c2ed20c09/b6948582-80f1-4cec-aff7-189dcdb8e1a5/2024-03-09_13h18_30.png)
+![flag](assets/ShaktiCTF/reverse/warmup/flag.png)
 
 GG ! That’s my first flag from a reverse challenge 😅
