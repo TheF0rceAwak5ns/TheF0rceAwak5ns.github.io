@@ -5,21 +5,19 @@ order: 5
 ---
 
 
-TFA est une équipe créée en 2023 qui a pour but de... non je rigole😅. 
+TFA is a french team based in the south of France. 
 
-Juste un petit blog créé par deux infosec lovers qui veulent partager des choses notamment des writeups, des revues de CVEs, cheat-sheet et surement pleins d'autre chose encore. 
+The team count 3 members, all currently in 2 years of highschool. 
 
-Oui la plus pars du contenu est en anglais du coup s'il y a des fautes c’est surement 4nh4ck1n3 😜. 
+### 4nh4ck1n3 ⚒️
 
-Ducoup présentations des blogers !
+Currently a student in BTS SIO SISR (Vaucluse), I am passionate about CTF, pentesting, and Star Wars 🚀.
 
-### 4nh4ck1n3 ⚫🤖⚔️
+I love everything about active directory & Web, but I still need to improve. Next year, I hope to be able to join ESNA 🤞.
 
-Actuellement étudiant en BTS SIO SISR (Vaucluse) , je suis passionné de CTF, de pentesting et de Star Wars 🚀. 
+**Certified**: eJPT, Dante, Zephyr
 
-J'adore tout ce qui est active directory & Web mais je dois encore progresser. L'année prochaine j'espère pouvoir intégrer l'ESNA de Bretagne🤞. 
-
-Je me prépare actuellement pour passer l'OSCP en septembre.
+**Current goal**: Preparing to take the OSCP exam in September.
 
 CTF Platformes : 
 - 💀 [Rootme](https://www.root-me.org/4nh4ck1n3)
@@ -32,8 +30,16 @@ Student in web development, in the south of France.
 
 Jump in the world of cyber since few month ago. Start by learning with THM then RootMe and finally with HTB.
 
-Currently preparing for eJPT certification. 
+**Certified**: eJPT
+
+**Current goal**: Finish the Dante prolabs and get the OSCP in september
 
 Hard work, grind, obsession that's what only count for me.
 
-CTF & Others: [RootMe 💀](https://www.root-me.org/Talace), [HackTheBox 🟩](https://app.hackthebox.com/users/1551559), [Tryhackme 😶‍🌫️](https://tryhackme.com/p/0x.88ta.ko), [GitHub 😼](https://github.com/StopThatTalace) 
+And always remember, you are cool
+
+CTF Platformes & Others: 
+- [RootMe 💀](https://www.root-me.org/Talace)
+- [HackTheBox 🟩](https://app.hackthebox.com/users/1551559)
+- [Tryhackme 😶‍🌫️](https://tryhackme.com/p/0x.88ta.ko)
+- [GitHub 😼](https://github.com/StopThatTalace) 
