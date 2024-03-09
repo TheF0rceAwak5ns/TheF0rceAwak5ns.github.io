@@ -8,11 +8,11 @@ tags: [web, reverse, forensics]     # TAG names should always be lowercase
 ---
 
 ## Summary
-
-<a href="#forensics">Forensic</a>
-<a href="#web">Web</a>
-<a href="#reverse">Reverse</a>
-
+<ul>
+    <li><a href="#forensics">Forensic</a></li>
+    <li><a href="#web">Web</a></li>
+    <li><a href="#reverse">Reverse</a></li>
+</ul>
 ![result](assets/ShaktiCTF/result.png)
 
 ## Forensics 
