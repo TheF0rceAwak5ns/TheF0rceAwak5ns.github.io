@@ -1,7 +1,7 @@
 ---
 title: ConvertMyVideo - Medium THM
 date: 2023-11-12 08:11:31 +/-0800
-categories: [writeup, tryhackme]
+categories: [writeup, TryHackMe]
 writeup: :title
 permalink: /convert
 tags: [Command injection, Web]     # TAG names should always be lowercase

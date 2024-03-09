@@ -1,7 +1,7 @@
 ---
 title: Monteverde - Medium HTB
 date: 2023-12-27 10:11:53 +/-0800
-categories: [writeup, hackthebox]
+categories: [writeup, HackTheBox]
 writeup: :title
 permalink: /monteverde
 tags: [AD, Azure]     # TAG names should always be lowercase

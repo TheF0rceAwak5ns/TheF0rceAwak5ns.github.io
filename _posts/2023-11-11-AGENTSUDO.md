@@ -1,7 +1,7 @@
 ---
 title: Agent Sudo - Easy THM
 date: 2023-11-11 10:20:51 +/-0800
-categories: [writeup, tryhackme]
+categories: [writeup, HackTheBox]
 writeup: :title
 permalink: /agentsudo
 tags: [Web, CVE-2019-14287, Common services]     # TAG names should always be lowercase

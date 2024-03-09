@@ -1,7 +1,7 @@
 ---
 title: Authority - Medium HTB
 date: 2023-09-15 10:11:53 +/-0800
-categories: [writeup, hackthebox]
+categories: [writeup, HackTheBox]
 writeup: :title
 permalink: /authority
 tags: [AD, Common services]     # TAG names should always be lowercase

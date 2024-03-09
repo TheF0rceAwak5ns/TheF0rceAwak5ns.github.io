@@ -1,7 +1,7 @@
 ---
 title: Shibboleth - Medium HTB
 date: 2024-01-26 10:11:53 +/-0800
-categories: [writeup, hackthebox]
+categories: [writeup, HackTheBox]
 writeup: :title
 permalink: /shibboleth
 tags: [Zabbix, CVE, MYSQL]     # TAG names should always be lowercase

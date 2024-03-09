@@ -1,7 +1,7 @@
 ---
 title: OpenAdmin - easy HTB
 date: 2023-10-10 10:11:53 +/-0800
-categories: [writeup, hackthebox]
+categories: [writeup, HackTheBox]
 writeup: :title
 permalink: /openadmin
 tags: [CVE, Web]     # TAG names should always be lowercase
