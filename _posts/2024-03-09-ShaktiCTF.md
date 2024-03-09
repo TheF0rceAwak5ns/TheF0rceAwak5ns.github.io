@@ -58,6 +58,11 @@ I found a tool which extracts from the hidden data in JPEG files what we have be
 ```
 
 It seems we have a large output text file try to analyze it. It seems we have a large output text file try to analyze it. by looking well we can directly fall on a chain of carateres encoded in base64, decode it and gain the flag !! 🤗
+```sql
+echo "c2hha3RpY3Rme3RoM19yM2RfczM0XzRuZF90aDNfNHJ0X29mXzN5M18xc19sb29rMW5nX2cwMGR9" | base64 -d
+
+shaktictf{th3_r3d_s34_4nd_th3_4rt_of_3y3_1s_look1ng_g00d}  
+```
 
 ## Crypto
 ### Flag Expedition
