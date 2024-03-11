@@ -6,6 +6,7 @@ writeup: :title
 permalink: /shaktictf
 tags: [Web, Reverse, Forensics, Crypto]
 ---
+**Author:** Anackin, Talace
 
 ## Summary
 <ul>
